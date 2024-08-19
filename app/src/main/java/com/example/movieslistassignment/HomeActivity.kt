@@ -2,10 +2,7 @@ package com.example.movieslistassignment
 
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -45,7 +42,7 @@ class HomeActivity : AppCompatActivity() {
                     movies = response.movies
 
                     Log.d("Home Activity", "Got data ${movies[0]}")
-                    populateGenres();
+                    populateGenres()
 
                     val movieAdapter = MovieAdapter(this@HomeActivity, movies)
                     binding.topWatchRecyclerView.adapter = movieAdapter
