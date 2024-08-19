@@ -17,6 +17,9 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -36,6 +39,11 @@ android {
 }
 
 dependencies {
+
+    implementation(libs.glide)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.android.gif.drawable)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

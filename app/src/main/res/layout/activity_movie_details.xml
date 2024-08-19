@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dark_gradient_bg"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/posterImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:text="Year: 1947"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_marginVertical="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightGrey2" />
+
+    <TextView
+        android:id="@+id/runtimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:text="Runtime: "
+        android:textSize="16sp" />
+
+    <View
+        android:layout_marginVertical="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightGrey2"
+        />
+    <TextView
+        android:id="@+id/directorTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:text="Director: JohnDoe"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginVertical="1dp"
+        android:layout_height="0.6dp"
+        android:background="@color/lightGrey2"/>
+
+    <TextView
+        android:id="@+id/actorTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:text="Actors: JohnDoe"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_marginVertical="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightGrey2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Description" />
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="This the sample description"
+        android:textColor="@color/lightGrey1"
+        android:fontFamily="@font/poppins_light"
+        />
+
+
+
+
+</LinearLayout>
