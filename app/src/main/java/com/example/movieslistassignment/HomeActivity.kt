@@ -26,7 +26,11 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Log.d("HOME ACTIVITY ", "Inside here")
+
         fetchMovieAndGenreData()
+
+        Log.d("HOME ACTIVITY ", "Fetch call executed")
 
         val movieAdapter = MovieAdapter(this,movies)
         binding.topWatchRecyclerView.layoutManager = LinearLayoutManager(this)

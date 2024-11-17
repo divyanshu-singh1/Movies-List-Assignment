@@ -42,7 +42,6 @@ class MovieAdapter(private val context : Context, private val movies : List<Movi
             .into(posterImgView)
 
         holder.itemView.setOnClickListener {
-            Log.d("MOVIE ADAPTER","HERE")
             val intent = Intent(context, MovieDetailsActivity::class.java).apply {
                 putExtra("MOVIE", movie)
             }
